@@ -17,6 +17,7 @@ class Parent extends Component {
       childrenColor: newChildColor
     })
   }
+  
   render() {
     return (
       <div className="parent" style={{backgroundColor: this.state.color}}>
