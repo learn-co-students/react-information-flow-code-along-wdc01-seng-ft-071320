@@ -10,7 +10,8 @@ class Parent extends Component {
       childrenColor: "#FFF",
     };
   }
-  changeColor = (newChildrenColor) => {
+  handleColorChange = (newChildrenColor) => {
+    // console.log();
     this.setState({
       color: getRandomColor(),
       childrenColor: newChildrenColor,
@@ -22,11 +23,11 @@ class Parent extends Component {
       <div className="parent" style={{ backgroundColor: this.state.color }}>
         <Child
           color={this.state.childrenColor}
-          handleColorChange={this.changeColor}
+          handleColorChange={this.handleColorChange}
         />
         <Child
           color={this.state.childrenColor}
-          handleColorChange={this.changeColor}
+          handleColorChange={this.handleColorChange}
         />
       </div>
     );
